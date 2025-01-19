@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
-const subTodo = new mongoose.Schema({
+const subTodoSchema = new mongoose.Schema({
 
 },{timestamps:true})
 
-const SubTodo = mongoose.model('SubTodo', subTodo)
+const SubTodo = mongoose.model('SubTodo', subTodoSchema)
