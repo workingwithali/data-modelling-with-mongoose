@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
     username : {
         type : String,
-        require : true ,
+        required : true ,
         lowercase: true,
         unique: true
     },
@@ -11,11 +11,11 @@ const userSchema = new mongoose.Schema({
         type : String,
         require : true ,
         lowercase: true,
-        unique: true
+        uniqued: true
     },
     password : {
         type : String,
-        require : [true,'password is required']
+        required : [true,'password is required']
     }
 },{timestamps:true})
 
